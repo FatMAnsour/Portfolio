@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+    </head>
+
+    <style>
+        body{
+            background-color: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #333;
+            color:white;
+            text-align: center;
+            padding: 20px;
+        }
+        #nav{
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        #nav a{
+            color: white;
+            margin: 15px;
+            text-decoration:none;
+            font-size: 18px;
+        }
+        #main{
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        #introsection, #activitysection, #skillssection, #contactsection{
+            margin-bottom:30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+      #introsection h2, #activitysection h2, #skillssection h2, #contactsection h2{
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+      }
+      #introsection img{
+          display: block;
+          margin: auto;
+          border-radius: 50%;
+          max-width: 200px;
+      }
+      #introsection ol{
+        padding-left: 40px;
+      }
+      #skillssection table{
+        width: 100%;
+      }
+      #skillssection th, #skillssection td{
+          border: 1px solid #333;
+          padding: 10px;
+          text-align: center;
+      }
+      #skillssection th{
+          background-color: #444;
+          color: white;
+      }
+      #contactsection label{
+        display: block;
+        margin: 10px 0 5px;
+      }
+      #contactsection input, #contactsection textarea{
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+       #contactsection button{
+            display: block;
+            margin:  auto;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        #footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            
+        }
+
+    </style>
+
+    <body>
+        <header>
+            <h1>Welcome In my Portfolio</h1>
+        </header>
+        <nav id="nav">
+            <a href="#introsection">About Me</a>
+            <a href="#activitysection">Activities</a>
+            <a href="#skillssection">Skills</a>
+            <a href="#contactsection">Contact</a>
+        </nav>
+        
+        <main id="main">
+            <section id="introsection">
+                <h2>About Me</h2>
+                <img src="boy-cartoon-character-running.jpg" >
+                <p style="text-align: center; font-size:16px;">Hi, I'm Fatma! I'm passionate about web development and enjoy creating user-friendly websites. This portfolio showcases my skills and interests.</p>
+            </section>
+            <section id="activitysection">
+                <h2>Favorite Activities</h2>
+                <ol>
+                    <li>Hiking in nature</li>
+                    <li>Reading books</li>
+                    <li>Reading tech blogs</li>
+                    <li>Coding new projects</li>
+                    <li>photography</li>
+                </ol>
+            </section>
+            <section id="skillssection">
+                <h2>Skills</h2>
+                <table>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Profeciency</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="contactsection">
+                <h2>Contact</h2>
+                <div>
+                    <label>Name:</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                    <label>Email:</label>
+                    <input type="email" id="email" placeholder="Your Email">
+                    <label>Message:</label>
+                    <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+                    <button type="button">Send Message</button>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <p>&copy; 2025 Fatma All, rights reserved.</p>
+        </footer>
+        
+    </body>
+
+</html>
+
